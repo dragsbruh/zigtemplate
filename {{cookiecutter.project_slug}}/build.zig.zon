@@ -1,0 +1,12 @@
+.{
+    .name = .{{cookiecutter.project_slug}},
+    .version = "0.0.0",
+    .minimum_zig_version = "ZIG_VERSION",
+    .fingerprint = 0x1234567890abcdef,
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
