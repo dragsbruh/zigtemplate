@@ -1,4 +1,4 @@
-const start = @import("sample.zig").start;
+const start = @import("with_sdl.zig").start;
 
 pub fn main() !u8 {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};

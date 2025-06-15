@@ -1,4 +1,5 @@
 const std = @import("std");
+const sdl = @import("sdl");
 
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
@@ -11,9 +12,14 @@ pub fn build(b: *std.Build) void {
     });
 
     const exe = b.addExecutable(.{
-        .name = "sample",
+        .name = "with_sdl",
         .root_module = exe_mod,
     });
+
+    const sdk = sdl.init(b, .{});
+
+    sdk.link(exe, .dynamic, sdl.Library.SDL2);
+    exe.root_module.addImport("sdl2", sdk.getWrapperModule());
 
     b.installArtifact(exe);
 

@@ -1,0 +1,17 @@
+.{
+    .name = .with_sdl,
+    .version = "0.0.0",
+    .minimum_zig_version = "0.14.1",
+    .fingerprint = 0x642477a09bdb5c34,
+    .dependencies = .{
+        .sdl = .{
+            .url = "git+https://github.com/ikskuh/SDL.zig.git#424ff5f9245ef352e4c508c77ddaeed2f46bd605",
+            .hash = "SDL2-0.0.0-yMCQigakBADGJHtb2ljt13P_cCnG8Y819HRnIibNVPFk",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
