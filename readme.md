@@ -26,6 +26,10 @@ or again if youre based like me (and obv have ssh keys setup)
 cookiecutter git@github.com:dragsbruh/zigtemplate.git
 ```
 
+### quick add
+
+you can add optional dependencies like sdl by setting `use_sdl` option to `yes`.
+
 ## about the template
 
 it has a post gen script to automatically detect zig version and also set the correct fingerprint.
@@ -61,5 +65,3 @@ i like returns because defer statements actually get to run, unlike `std.process
 ## todo
 
 - [ ] anyzig support
-
-## quick add
