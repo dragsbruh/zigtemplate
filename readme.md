@@ -61,3 +61,5 @@ i like returns because defer statements actually get to run, unlike `std.process
 ## todo
 
 - [ ] anyzig support
+
+## quick add

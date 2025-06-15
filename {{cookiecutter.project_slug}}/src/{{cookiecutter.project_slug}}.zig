@@ -1,6 +1,7 @@
 const std = @import("std");
+//SAMPLE_IMPORTS
 
 pub fn start(allocator: std.mem.Allocator) anyerror!void {
-    _ = allocator;
-    std.debug.print("hello from {s}!\n", .{"{{cookiecutter.project_slug}}"});
+    _ = allocator; // FIXME: remove this line
+    //SAMPLE_CODE
 }
