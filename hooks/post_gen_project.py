@@ -13,7 +13,8 @@ def replace_in_file(path: str, replacements: dict[str, str]):
 
 def main():
     placeholder_fingerprint = r"0x1234567890abcdef"
-    placeholder_version = "ZIG_VERSION"
+    placeholder_version = "ZIG_VERSION"    
+    placeholder_project_name = "PROJECT_NAME"
 
     process = subprocess.run(["zig", "version"], capture_output=True)
     process.check_returncode()
@@ -22,6 +23,7 @@ def main():
 
     replace_in_file(f"./build.zig.zon", {
         placeholder_version: version,
+        placeholder_project_name: "{{cookiecutter.project_slug}}",
     })
 
     process = subprocess.run(["zig", "build"], capture_output=True)
