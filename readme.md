@@ -28,7 +28,7 @@ cookiecutter git@github.com:dragsbruh/zigtemplate.git
 
 ### quick add
 
-you can add optional dependencies like sdl by setting `use_sdl` option to `yes`.
+> this feature was removed because its no longer simple and i dont like it
 
 ## about the template
 
