@@ -1,4 +1,5 @@
 const std = @import("std");
+const io = @import("io.zig");
 
 pub fn start(allocator: std.mem.Allocator) anyerror!void {
     const input = "123 67 89,99";
@@ -14,5 +15,5 @@ pub fn start(allocator: std.mem.Allocator) anyerror!void {
         try list.append(n);
     }
 
-    std.debug.print("{any}\n", .{list.items});
+    try io.stdout.print("{any}\n", .{list.items});
 }
