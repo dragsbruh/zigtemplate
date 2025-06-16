@@ -1,5 +1,4 @@
 const std = @import("std");
-//DEPS_IMPORTS
 
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
@@ -15,8 +14,6 @@ pub fn build(b: *std.Build) void {
         .name = "{{cookiecutter.project_slug}}",
         .root_module = exe_mod,
     });
-
-    //DEPS_CODE
 
     b.installArtifact(exe);
 

@@ -1,4 +1,3 @@
 {
-  "project_slug": "zig_project",
-  "use_sdl": ["no", "yes"]
+  "project_slug": "zig_project"
 }

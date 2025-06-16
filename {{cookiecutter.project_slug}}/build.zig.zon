@@ -1,8 +1,8 @@
 .{
     .name = .PROJECT_NAME,
     .version = "0.0.0",
-    .minimum_zig_version = "ZIG_VERSION",
-    .fingerprint = 0x1234567890abcdef,
+    .minimum_zig_version = "0.14.1",
+    .fingerprint = 0x3341d00aaab2a5af,
     .dependencies = .{},
     .paths = .{
         "build.zig",
